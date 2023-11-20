@@ -1,27 +1,30 @@
--- [[ FX Information ]] --
-fx_version 'adamant'
-lua54 'yes'
-game 'gta5'
+fx_version 'cerulean'
+rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aware my resources *will* become incompatible once RedM ships.'
+game 'rdr3'
 
--- [[ Resource Information ]] --
-name 'gusti-boostfps'
-author 'Gusti Agung'
-version '1.0.2'
-description 'The gusti-boostfps script is to make players boost their fps in the game, to prevent fps drops, stuttering, etc. from occurring.'
+description 'rsg-boostFPS'
+version '1.0.0'
 
 shared_scripts {
     '@ox_lib/init.lua',
-    'config.lua'
+    '@rsg-core/shared/locale.lua',
+    'locales/en.lua',
+    'locales/*.lua',
+    'config.lua',
 }
 
 client_scripts {
-    'client/*.lua'
+    'client/*.lua',
 }
 
 server_scripts {
-    'server/*.lua'
+    '@oxmysql/lib/MySQL.lua',
+    'server/*.lua',
 }
 
 dependencies {
-    "ox_lib"
+    'rsg-core',
+    'ox_lib',
 }
+
+lua54 'yes'
