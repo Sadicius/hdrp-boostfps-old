@@ -7,13 +7,11 @@ Version for RedM / The gusti-boostfps script is to make players boost their fps 
 - Others Mode
 - Reset
 
-#Framework
-- RSGCore
-
-#Dependencies
+# Dependencies
 - ox_lib
-
+- rsg-Core
+  
 Commands = 'boostfps' -- Commands open menu boostfps
 
-#Credits
-https://github.com/Gustiagung19/gusti-boostfps
+# Credits
+- https://github.com/Gustiagung19/gusti-boostfps
